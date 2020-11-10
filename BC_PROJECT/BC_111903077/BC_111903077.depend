@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1604847822 source:c:\users\admin\documents\dsa\bc_project\istack.c
+	<stdlib.h>
+	"istack.h"
+
+1604848016 c:\users\admin\documents\dsa\bc_project\istack.h
+	"list.h"
+
+1604845132 source:c:\users\admin\documents\dsa\bc_project\functions .c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	"list.h"
+	"functions .h"
+
+1604848037 c:\users\admin\documents\dsa\bc_project\list.h
+
+1604835902 c:\users\admin\documents\dsa\bc_project\functions .h
+
+1604847003 source:c:\users\admin\documents\dsa\bc_project\functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	"list.h"
+	"functions.h"
+
+1604848196 c:\users\admin\documents\dsa\bc_project\functions.h
+
+1604848201 source:c:\users\admin\documents\dsa\bc_project\infix.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"istack.h"
+	"functions.h"
+	<limits.h>
+
+1604846238 c:\users\admin\documents\dsa\bc_project\functions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<errno.h>
+	<math.h>
+	"list.h"
+	"functions.h"
+
+1604846112 source:c:\users\admin\documents\dsa\bc_project\list.c
+	<stdio.h>
+	<stdlib.h>
+	"list.h"
+
