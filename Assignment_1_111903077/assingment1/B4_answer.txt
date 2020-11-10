@@ -1,0 +1,8 @@
+1.
+It is computed two times in the original code (SSA pass). After fre1 pass, it is computed just once.
+
+2.
+We can check about more optimisations by checking B-4.c.*.optimized, there we can see multiple assignments have been removed.
+
+3.
+Returning b is good practise to do, as 'b' has not been initialized so contains garbage value.

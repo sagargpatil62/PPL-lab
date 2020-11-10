@@ -1,0 +1,5 @@
+1.
+'a' can take value from 4 to 100 as shown in the dump file.
+a < 4 condition will never be true as the value of 'a' starts from 4 to 100, which is always greater than or equal to 4.
+So, we will get always a false value each time, so the compiler knows this and it seems like it has removed the <bb 3>,
+which is the conditional check (if-else block).

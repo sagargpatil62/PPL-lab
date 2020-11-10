@@ -1,0 +1,22 @@
+1. 
+Each variable in the main function is declared in a separate line and is in order which they are declared in our source code.
+If multiple variables are declared in the same line, they are declared separated in a new line, and all are initialized after all the variables are declared.
+Inline initialization are done in the same order, and initialization done after declaration of all the variables.
+Global variables are not decalred in the gimple file explicitly, but it is stored in locals and can be used in the main file like any other variable.
+
+2.
+Complex operations are broken down and executed by the rule of operator precedence and associativity of operators.
+c = a * b + 25, first according to operator precedence, multiplication occurs and stored in a temporary variable.
+Final assignment to c is done by adding 25 in the temporary variable.
+Operations are done using tree-type data structure, temporary variables are introduced at each step, until final operation/assignment of values is performed.
+
+3.
+Floats and doubles are initialized in the format x.xxe+1, for example 34.5 is stored in the standard scientific format 3.45e+1.
+While assignment of floats/doubles to an integer, is done by first converting(type-casting) float/double to integer first. Then assignment occurs.
+
+4.
+Read/Write directly affects the global variable and it is done from local memory.
+While incrementing or decrementing, copies are generated before any assignement to global variable.
+In Z = Z + 1, first copy must be used to store the current value to avoid any ambiguity.
+Using same variable on right hand side while assignment is preferred using a copy.
+But while doing q = Z or Z = p, other variables are used and it's just one-step assignment, so no copies are required.

@@ -1,0 +1,8 @@
+1.
+If blocks are converted into traditional goto and labels. Similar process used in ALP's.
+Conditional gotos are preceded by a condition and uses two labels, one if condition is satisfied, other if not satisfied.
+Unconditional goto are just points to one label.
+
+2.
+Yes, it becomes easy to understand the control flow of the program. 
+The labels/nodes are very clear, it is just lengthy due to initial information about function f, and elaborate writing style.

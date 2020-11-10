@@ -1,0 +1,17 @@
+1.
+Yes. 
+Some variables like a,b and c are never initialized, and after that their values are used further in the program. '(D)' might be "definition issue".
+
+2.
+Yes. In <bb 5> the definition of a and b are merged.
+(From Documentation) [Sometimes, flow of control makes it impossible to determine the most recent version of a variable. In these cases, the compiler inserts an artificial definition for that variable called PHI function or PHI node. 
+This new definition merges all the incoming versions of the variable to create a new name for it.]
+Syntax : PHI < val_1(bb_x1), val_2(bb_x2), ... val_n(bb_xn)) >
+It stores the block and value of all the versions of that variable, and returns the most suitable one.
+
+3. 
+Yes. When there are multiple if-else statements or switch case.
+Documentation : [Since it is not possible to determine which of the three branches will be taken at runtime, we don’t know which of a_1, a_2 or a_3 to use at the return statement. 
+So, the SSA renamer creates a new version a_4 which is assigned the result of “merging” a_1, a_2 and a_3. Hence, PHI nodes mean “one of these operands. I don’t know which”.
+
+]

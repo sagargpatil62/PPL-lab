@@ -1,0 +1,12 @@
+1.
+Arrays are declared initially with other variables, explicitly mentioning their size.
+They are initialized with each entry on a new line.
+
+2.
+On a lower level what happens is, one instruction is fetched in one cycle.
+So here also, reading value from a memory location (to accumulator or so) is performed in one sentence and storing that value to memory is performed in new cycle.
+Hence two steps are required.
+
+3.
+Clobbering a file or computer memory is overwriting its contents.
+It is done to free the memory after scope of the program ends. In this way, that memory can be reused.

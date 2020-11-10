@@ -1,0 +1,15 @@
+1.
+<BB3> and <BB4> are the labels corresponding to the while loop. 
+If-else labels are only accessed once and they are ahead of the current line.
+However, in the case of while loop, labels are accessed until a condition is satisfied.
+And the labels inside the loop is before the current line.
+
+2.
+<BB5>:  outer loop counter variable initialisation
+<BB10>: outer loop conditional check
+<BB6>:  inner loop counter variable initialisation
+<BB8>:  Inner loop conditional check
+<BB7>:  Inner loop body + counter variable increment
+<BB9>:  Outer loop counter variable increment
+Yes, in for loop, an extra label is used for changing the value of counter variable.
+In while loop, we have to explicitly change the value of counter variable.

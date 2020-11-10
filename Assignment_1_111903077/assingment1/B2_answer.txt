@@ -1,0 +1,6 @@
+1.
+When N is used, which is an uninitialized global variable, it's copy is taken in the main function.
+This copy of N is added to the copies of a in each and every step, and finally also the copy of a is returned. 
+a is never changed in the function.
+When a = a + 1 is performed, in cunroll, process of incrementing the value is not shown, directly 14 is returned.
+This abstraction happens beacuse the compiler can evaluate the value in case of a = a + 1, but is case of N, N is not defined properly.

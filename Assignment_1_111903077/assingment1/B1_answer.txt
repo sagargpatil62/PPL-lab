@@ -1,0 +1,9 @@
+1.
+It may seems inline to us, but we can't say that it is completely useless.
+It might used in other parts of the source code again and again, thus saving many lines to write.
+In calling a function the control jumps to the starting line of the function and executes the further lines of code.
+And yes, that is what typically is function is used for, i.e. reusability.
+
+2.
+Yes, maybe. We can use keywords like static in function declaration, because of which we can specify that the function usage is internal only.
+Though not sure on this answer.
